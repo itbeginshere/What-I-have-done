@@ -1,0 +1,178 @@
+
+main {
+	min-height: 100%;
+	
+}
+
+main .blog-container{
+	width: 70%;
+	height: 130rem;
+	margin: 0 auto;
+	background-color: darkgrey;
+}
+
+main .blog-container .article-conent{
+	width: 70%;
+	height: 90%;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+main .blog-container .blog-controls{
+	width: 70%;
+	height: 10%;
+	margin: 0 auto;
+}
+
+main .blog-container .article-content .articles-container{
+	width: 100%;
+	height: 100%; 
+
+}
+
+main .blog-container .articles-container .article-card{
+	width: 100%;
+	height: 220px;
+	background-color: rgb(80,80,80);
+	padding: 25px;
+	margin-bottom: 10px;
+	border: 3px solid rgb(255,207,33);
+	border-radius: 15px;
+}
+
+
+main .blog-container .articles-container .article-card .article-form{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+}
+
+main .blog-container .articles-container .article-card .article-form .hidden{
+	color: transparent;
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	border: 0;
+	border-color: transparent; 
+}
+
+main .blog-container .articles-container .article-card .article-form .article-title{
+	color: rgb(255,207,33);
+	text-transform: capitalize;
+	font-size: 26px;
+}
+
+main .blog-container .articles-container .article-card .article-form .article-log{
+	margin-top: 3px;
+	margin-bottom: 5px;
+}
+
+main .blog-container .articles-container .article-card .article-form .article-log .article-author{
+	color: darkgrey;
+	font-size: 16px;
+}
+
+main .blog-container .articles-container .article-card .article-form .article-log .article-stamp{ 
+	color: darkgrey;
+	font-size: 14px;
+}
+
+main .blog-container .articles-container .article-card .article-form .article-brief{
+	margin-bottom: 10px;
+}
+
+main .blog-container .articles-container .article-card .article-form .article-brief .first-para{
+	font-size: 12px;
+	color: rgb(230,230,230);
+	text-align: justify;
+}
+
+main .blog-container .articles-container .article-card .article-form input[type="submit"]{
+	border-radius: 3px;
+	border: 1px solid rgb(255,207,33);
+	color: rgb(255,207,33);
+	background-color: rgb(80,80,80);
+	padding: 5px;
+	width: 250px;
+	height: 30px;
+	text-transform: uppercase;
+}
+
+main .blog-container .articles-container .article-card .article-form input[type="submit"]:hover{
+	border-radius: 3px;
+	border: 2px solid black;
+	color: black;
+	background-color: rgb(255,205,33);
+	padding: 5px;
+	cursor: pointer;
+}
+
+main .blog-container .blog-controls .modify-blog-form{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: center;	
+	justify-content: center;
+}
+
+main .blog-container .blog-controls .modify-blog-form .crtls-heading{
+	font-size: 22px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: rgb(255,207,33);
+}
+
+main .blog-container .blog-controls .modify-blog-form .crtls-para{
+	color: rgb(80,80,80);
+	margin-bottom: 10px;
+	text-align: justify;
+	font-size: 14px;
+}
+
+main .blog-container .blog-controls .modify-blog-form input[type="submit"]{
+	border-radius: 3px;
+	border: 1px solid rgb(255,207,33);
+	color: rgb(255,207,33);
+	background-color: rgb(80,80,80);
+	padding: 5px;
+	width: 70%;
+	height: 30px;
+	text-transform: uppercase;
+}
+
+main .blog-container .blog-controls .modify-blog-form input[type="submit"]:hover{
+	border-radius: 3px;
+	border: 2px solid black;
+	color: black;
+	background-color: rgb(255,205,33);
+	padding: 5px;
+	cursor: pointer;
+}
+
+ @media only screen and (max-width: 800px){
+	main .blog-container .articles-container .article-card .article-form .article-title{
+		font-size: 24px;
+	}
+
+	main .blog-container .articles-container .article-card .article-form .article-log .article-author{
+		font-size: 14px;
+	}
+
+	main .blog-container .articles-container .article-card .article-form .article-log .article-stamp{ 
+		font-size: 12px;	
+	}
+	main .blog-container .article-conent{
+		width: 90%;
+	}
+
+	main .blog-container .articles-container .article-card{
+		height: 250px;
+	}
+	
+	main .blog-container .blog-controls .modify-blog-form .crtls-para{
+		font-weight: bold;
+	}
+
+ }

@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 12px;
+	font-family: "Roboto Cn", sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(255,207,33);
+}
+
+html,body{
+	height: 100%;
+	width: 100%;
+}
+
+main{	
+	min-height: 100%;
+	background-color: rgb(240,240,240);
+}
+
+/*Header Desktop- Start*/
+
+header{
+	width: 100%;
+	background-color: rgb(70,70,70);
+	border-bottom: 5px solid rgb(255,207,33);
+}
+
+
+.container{
+	max-width: 150rem;
+	width: 90%;
+	margin: 0 auto;
+}
+
+nav{
+	padding-top: 2rem;
+	padding-bottom: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+}
+
+nav ul li{
+	list-style: none;
+}
+
+nav ul li a{
+	padding: 1rem 0;
+	margin: 0 1.8rem;
+	position: relative;
+	letter-spacing: 2px;
+}
+
+nav ul li a:last-child{
+	margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: rgb(255,207,33);
+	left: 0;
+	transform: scaleX(0);
+	transition: all 0.5s;
+}
+
+nav ul li a::before{
+	top:0;
+	transform-origin: left;
+}
+
+nav ul li a::after{
+	bottom:0;
+	transform-origin: right;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+	transform: scaleX(1);
+
+}
+
+@media only screen and (max-width: 800px){
+	nav{
+		flex-direction: column;
+		align-items: center;
+
+		font-size: 1.5rem;
+	}
+
+	nav ul{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}	
+
+	nav ul li{
+		list-style: none;
+		margin-top: 28px;
+	}
+
+	.logo{
+		margin-left: 40px;
+	}
+}

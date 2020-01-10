@@ -1,0 +1,334 @@
+
+/*Main Desktop- Start*/
+
+
+main .home-row-1{
+	background-color: darkgrey;
+	height: 300px;
+}
+
+main .home-row-2{
+	background-color: rgb(220,220,220);
+	height: 300px;
+}
+
+main .home-row-3{
+	background-color: darkgrey;
+	height: 300px;
+}
+
+main .home-row-4{
+	background-color: rgb(220,220,220);
+	height: 300px;
+}
+
+main .home-row-1 .row-1-content{
+	height: inherit;
+	width: 80%;
+	overflow: auto;
+	padding: 25px;
+	margin: 0 auto;
+}
+
+
+main .home-row-1 .row-1-content h1{
+	text-align: center;
+	font-size: 25px;
+	margin: 20px 0;
+	color: rgb(40, 40, 40);
+}
+
+main .home-row-1 .row-1-content p{
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	color: purple;
+}
+
+main .home-row-1 .row-1-content .quick-links{
+	margin-top: 5%;
+}
+
+main .home-row-1 .row-1-content .quick-links ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+main .home-row-1 .row-1-content .quick-links ul li{
+	cursor: pointer;
+	font-size: 14px;
+}
+
+main .home-row-1 .row-1-content .quick-links ul li a{ 
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+}
+
+main .home-row-1 .row-1-content .quick-links ul li a:hover{ 
+	color: white;
+	font-weight: bold;
+}
+
+main .home-row-2 .row-2-content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	height: inherit;
+	width: 100%;
+	overflow: auto;
+}
+
+main .home-row-2 .row-2-content .carousel-description{
+	padding: 35px;
+	width: 100%;
+}
+
+main .home-row-2 .row-2-content .carousel-description h2{
+	color: purple;
+	font-size: 20px;
+	text-align: right;
+	margin: 15px 0;
+	text-transform: capitalize;
+}
+
+main .home-row-2 .row-2-content .carousel-description p{
+	color:rgb(40, 40, 40);;
+	font-size: 14px; 
+	text-align: justify;
+}
+
+main .home-row-3 .row-3-content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	height: inherit;
+	width: 100%;
+	overflow: auto;
+	position: relative;
+}
+
+
+main .home-row-3 .row-3-content .store-div{
+	width: 100%;
+	text-align: center;
+}
+
+main .home-row-3 .row-3-content .blog-div{
+	width: 100%;
+	text-align: center;
+}
+
+main .home-row-3 .row-3-content .row-3-text{
+	text-align: center;
+}
+
+main .home-row-3 .row-3-content .row-3-heading{
+	font-size: 20px;
+	text-transform: capitalize;
+	margin: 15px 0;
+	color: rgb(40,40,40);
+}
+
+main .home-row-3 .row-3-content .row-3-paragraph{
+	color: purple;
+	font-size: 16px;
+	margin: 10px;
+}
+
+main .home-row-3 .row-3-content .row-3-image{
+	padding: 30px;
+}
+
+main .home-row-3 .row-3-content .row-3-link{
+	margin-top: 10px;
+	font-size: 14px; 
+	text-transform: uppercase;
+}	
+
+main .home-row-3 .row-3-content .row-3-link a:hover{
+	color: white;
+	font-weight: bold;
+}	
+
+main .home-row-4 .row-4-content{
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	height: inherit;
+	width: 100%;
+	overflow: auto;
+}
+
+main .home-row-4 .row-4-content .row-4-section{
+	flex:1;
+	padding: 25px;
+}
+
+
+main .home-row-4 .row-4-content .row-4-section .form-subscribe{
+
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 25vh;
+} 
+
+main .home-row-4 .row-4-content .row-4-section .form-subscribe input[type="email"],[type="text"]{
+	height: 30px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20px;
+	resize: none;
+	outline: none;
+	border-radius: 3px;
+	font-size: 12px;
+	padding: 5px;
+	background-color: lightgrey;
+
+}
+
+main .home-row-4 .row-4-content .row-4-section .form-subscribe input[type="email"],[type="text"]:focus{
+	border-bottom: 1.5px solid rgb(255,207,33);
+}
+
+main .home-row-4 .row-4-content .row-4-section .form-subscribe input[type="submit"]{
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+main .home-row-4 .row-4-content .row-4-section .form-subscribe label{
+	font-size: 16px;
+	font-weight: bold;
+	color: purple;
+	margin: 0 auto;
+	margin-top: 10px;
+} 
+
+main .home-row-4 .row-4-content .row-4-section h1{
+
+	text-transform: capitalize;
+	font-size: 20px;
+	color: purple;
+
+} 
+
+main .home-row-4 .row-4-content .row-4-section h1 span{
+
+	text-transform: uppercase;
+	font-size: 22px;
+	color: rgb(40,40,40);
+
+} 
+
+main .home-row-4 .row-4-content .row-4-section p{
+	font-size: 16px;
+	color: rgb(40,40,40);
+	margin: 20px 0 20px 0; 
+} 
+
+main .home-row-4 .row-4-content .row-4-section .error-para{
+	font-size: 12px;
+	color: rgb(252, 94, 66);
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align: center;
+} 
+
+main .home-row-4 .row-4-content .row-4-section .success-para{
+	font-size: 12px;
+	color: purple;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align: center;
+} 
+
+@media only screen and (max-width: 800px){
+
+	main .home-row-2{
+		height: 600px;
+	}
+	
+	main .home-row-3{
+		height: 600px;
+	}
+
+	main .home-row-4{
+		height: 600px;
+	}
+
+	main .home-row-1 .row-1-content p{
+		font-size: 14px;
+		text-align: justify;
+	}
+
+	main .home-row-1 .row-1-content a{
+		font-size: 12px;
+	}
+
+	main .home-row-2 .row-2-content{
+		flex-direction: column-reverse;
+	}
+
+	main .home-row-2 .row-2-content .carousel-description h2{
+		font-size: 22px;
+		text-align: center;
+	}
+
+	main .home-row-2 .row-2-content .carousel-description p{
+		font-size: 16px; 
+		font-weight: bold;
+	}
+
+	main .home-row-3 .row-3-content{
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	main .home-row-3 .row-3-content .row-3-heading{
+		font-size: 22px;
+	}
+
+	main .home-row-3 .row-3-content .row-3-paragraph{
+		text-align: justify;
+		font-weight: bold;
+	}
+
+	main .home-row-4 .row-4-content{
+		flex-direction: column-reverse;
+		justify-content: space-around;
+	}
+
+	main .home-row-4 .row-4-content .row-4-section .form-subscribe label{
+		font-size: 18px;
+	} 
+
+	main .home-row-4 .row-4-content .row-4-section h1{
+		font-size: 22px;
+		text-align: center;
+	} 
+
+	main .home-row-4 .row-4-content .row-4-section h1 span{
+		font-size: 24px;
+	} 
+
+	main .home-row-4 .row-4-content .row-4-section p{
+		font-size: 18px;
+		font-weight: bold;
+		text-align: justify;
+	}	 
+
+
+
+}

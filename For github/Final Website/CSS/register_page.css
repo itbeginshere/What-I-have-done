@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+	border-style: border-box;
+}
+
+html{
+	font-size: 12px;
+	color: rgb(255,207,33);
+	font-family: "Roboto Cn", sans-serif;
+}
+
+html,body{
+	height: 90%;
+	width: 100%;
+	background-color: rgb(40,40,40);
+}
+
+main{
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.content-container{
+	width: 50%;
+	height: inherit;
+	margin: 0 auto;
+	padding: 25px;
+	background-color: rgb(70,70,70);
+	display: flex;
+	flex-direction: row-reverse;
+	border-left: solid 2px rgb(255,207,33);
+}
+
+main .content-container .login-form{
+	width: 50%;
+}
+
+
+h1{
+	color: rgb(255,207,33);
+	text-align: center; 
+	margin-top: 10px;	
+	margin-bottom: 5px;
+}
+
+.content-container .register-form{
+	width: 50%;
+}
+
+main form div{
+	width: 90%;
+	margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+	width: 100%;
+	resize: none;
+	outline: none;
+	border-radius: 3px;
+	font-size: 12px;
+	padding: 5px;
+	background-color: lightgrey;
+	margin-top: 25px; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+	border-bottom: 1.5px solid rgb(255,207,33);
+}
+
+main .content-container .submit-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+input[type="submit"],
+input[type="button"]{
+	border-radius: 3px;
+	border: 1px solid rgb(255,207,33);
+	color: rgb(255,207,33);
+	background-color: rgb(80,80,80);
+	padding: 0;
+	width: 40%;
+	height: 35px;
+	text-transform: uppercase;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+
+input[type="submit"]:hover,
+input[type="button"]:hover{
+	border-radius: 3px;
+	border: 2px solid black;
+	color: black;
+	background-color: rgb(255,205,33);
+	padding: 0;
+	cursor: pointer;
+}
+
+body .home-button{
+	display: flex;
+	justify-content: space-around;
+}
+
+.notif-para {
+	font-size: 14px;
+	text-align: center;
+	color: rgb(255,207,33);
+	width: 50%;
+	margin: 0 auto;
+	border: 2px solid rgb(255,207,33);
+	padding: 10px;
+}
+
+.error-para{
+	font-size: 12px;
+	color: rgb(252, 94, 66);
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 800px){
+
+	.content-container{
+		width: 79%;
+		height: 66rem;
+		flex-direction: column;
+		border-left: none;
+	}
+
+	main .content-container .login-form{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	main .content-container .register-form{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	input[type="submit"],
+	input[type="button"]{
+		height: 40px;
+	}
+
+	body .home-button input[type="button"]{
+		height: 40px;
+	}
+
+	.error-para, .notif-para{
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,86 @@
+
+/*Main Desktop- Start*/
+
+main .container{
+	width: 50%;
+	height: 100%;
+	background-color: darkgrey;
+}
+   
+main .container h1, .container h2{
+	text-transform: uppercase;
+	color: rgb(255,207,33);
+	text-align: center;
+	padding: 25px 0; 
+}
+
+main .container .about-content{
+	width: 90%;
+	margin: 0 auto; 
+}
+
+main .about-para{
+	font-size: 14px;
+	color : rgb(80, 80, 80);
+	text-align: justify;
+}
+
+main .container .bullet-list {
+	list-style: none;
+}
+
+main .container .bullet-list li {
+	margin: 0;
+	padding: 2px 0;
+	text-align: center;
+	color : rgb(80,80,80);
+}
+
+main .container .about-content .about-closing{
+	margin-bottom: 25px;
+
+}
+
+main .container .about-content .about-closing p{
+		text-align: center;
+}
+
+main .container .about-content .about-closing span{
+	text-transform: uppercase;
+	color: rgb(255,207,33);
+}
+
+main .container .about-content .about-closing a{
+	text-transform: uppercase;
+	color: rgb(255,207,33);
+}
+
+main .container .about-content .about-closing a:hover{
+	color: white;
+	font-weight: bold; 
+}
+
+/*Main Desktop- End*/
+
+@media only screen and (max-width: 800px){
+
+	main .container{
+		width: 80%;
+		background-color: darkgrey;	
+	}
+   
+	main .container .about-content{
+		width: 80%;
+	}
+
+	main .about-para{
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	main .container .bullet-list li {
+		font-size: 16px;	
+		font-weight: bold;
+	}
+}
+

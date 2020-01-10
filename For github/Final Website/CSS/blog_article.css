@@ -1,0 +1,71 @@
+main {
+	min-height: 100%;
+}
+
+main .article-conatiner{
+	width: 60%;
+	margin: 0 auto; 
+	background-color: darkgrey;
+	
+	padding: 20px;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+}
+
+main .article-conatiner .article-title{
+	font-size: 26px;
+	text-align: center;
+	text-transform: capitalize;
+	color: rgb(255,207,33);
+}
+
+main .article-conatiner .article-log{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: rgb(240, 207, 99);
+}
+
+main .article-conatiner .article-log .article-author{
+	font-size: 16px;
+}
+
+main .article-conatiner .article-log .article-stamp{
+	font-size: 14px;
+}
+
+main .article-conatiner .article-brief{
+	width: 90%;
+	margin: 0 auto;
+
+}
+
+main .article-conatiner .article-brief .first-para{
+	color: rgb(80,80,80);
+	margin-bottom: 20px;
+	font-weight: bold;
+	text-align: justify;
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 800px){
+	main .article-conatiner{
+		width: 80%;
+	}
+
+	main .article-conatiner .article-title{
+		font-size: 28px;
+	}
+	main .article-conatiner .article-log .article-author{
+		font-size: 18px;
+	}
+
+	main .article-conatiner .article-log .article-stamp{
+		font-size: 16px;	
+	}
+
+	main .article-conatiner .article-brief .first-para{
+		font-size: 14px;
+	}
+}
