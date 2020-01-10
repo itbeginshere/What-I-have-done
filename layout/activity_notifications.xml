@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Notifications"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/drawer_layout"
+    android:background="@color/icons">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary_dark"
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:elevation="4dp"/>
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textSize="16dp"
+            android:id="@+id/notif_msgs_txt"/>
+
+        <ListView
+            android:id="@+id/notif_msgs_list"
+            android:layout_width="match_parent"
+            android:layout_height="169dp"
+            android:layout_marginTop="30dp"></ListView>
+
+
+
+        <Button
+            android:id="@+id/notif_msgs_read"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="Read"
+            android:textColor="@color/cardview_light_background"
+            android:background="@color/accent"
+            android:textSize="30dp"
+            android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+</android.support.v4.widget.DrawerLayout>

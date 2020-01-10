@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ClassSearchCust"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/drawer_layout"
+    tools:openDrawer="start"
+    android:background="@color/icons">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary_dark"
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:elevation="4dp" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/cls_srch_min_price"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:hint="Starting Price"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/cls_srch_max_price"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:hint="Ending Price"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Spinner
+            android:id="@+id/cls_srch_type"
+            android:layout_width="200dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:spinnerMode="dropdown"></Spinner>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+
+            <ListView
+                android:id="@+id/cls_srch_classes_list"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"></ListView>
+
+        </LinearLayout>
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:id="@+id/cls_srch_btn_seacrh"
+                android:layout_marginTop="20dp"
+                android:background="@color/accent"
+                android:text="Search"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="17dp"
+                android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+</android.support.v4.widget.DrawerLayout>

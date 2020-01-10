@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AdminInstructor"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/drawer_layout"
+    tools:openDrawer="start"
+    android:background="@color/icons">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary_dark"
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:elevation="4dp" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Employee ID"
+            android:id="@+id/admin_instruct_id"
+            android:inputType="text"
+            android:layout_marginTop="70dp"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:id="@+id/admin_instruct_f_name"
+            android:inputType="text"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:id="@+id/admin_instruct_l_name"
+            android:inputType="text"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/admin_instruct_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/admin_instruct_pass"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Password"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/admin_instruct_pass_confirm"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Confirm Password"
+            android:inputType="text" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/admin_instruct_btn_get"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/accent"
+                android:text="Get"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/admin_instruct_btn_add"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/accent"
+                android:text="Add new"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/admin_instruct_btn_update"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/accent"
+                android:text="Update"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/admin_instruct_btn_delete"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/accent"
+                android:text="Delete"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="20dp"
+                android:layout_marginBottom="40dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+</android.support.v4.widget.DrawerLayout>
