@@ -1,0 +1,96 @@
+body {
+	background-color: #000000;
+	padding: 0;
+	margin: 0;
+	background-color: #adb0b3;
+	color: white;
+
+	font-family: "Times New Roman", sans-serif;
+}
+
+#title {
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Rock Salt', cursive;
+}
+
+blockquote {
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Architects Daughter' , cursive;
+	background-color: #686b6e;
+	border-radius: 15px;
+	box-shadow: 0px 0px 25px 20px #686b6e;
+	padding: 10px;
+	margin: 0px auto 50px auto;
+	max-width: 600px;
+}
+
+
+#main {
+	width: 85%;
+	margin: 0 auto 0 auto;  
+}
+
+#img-div {
+	display: block;
+}
+
+#image {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px 0 #000;
+}
+
+#img-caption {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 22px;
+	font-family: 'Indie Flower', cursive;
+}
+
+#title-info {
+	text-align: center;
+	font-size: 25px;
+	color: #45443f;
+	font-family: 'Open Sans', sans-serif;	
+}
+
+
+#tribute-info ul {
+	max-width: 550px;
+	margin: 40px auto 40px auto;
+	text-align: left;
+	line-height: 2;
+}
+
+#tribute-info ul li{
+	font-size: 20px;
+}
+
+#link-paragraph {
+	text-align: center;
+	font-size: 22px; 
+}
+
+#tribute-link {
+	color: black;
+	text-decoration: none;
+}
+
+#tribute-link:hover {
+	color: #ffd22e;
+}
+
+
+footer {
+	position: relative;
+	bottom: 0;
+	text-align: center;
+	margin-top: 20px; 
+	background-color: #55585c;
+	padding: 30px;
+}
